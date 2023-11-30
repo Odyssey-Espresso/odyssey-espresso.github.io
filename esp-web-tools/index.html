@@ -1,1 +1,36 @@
-Hello World Esp web Tools
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Argos Firmware Installer</title>
+    <meta name="description" content="Install Firmware for Odyssey Espresso Argos" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="color-scheme" content="dark light" />
+    <!-- import stylesheet -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- <script type="module" src="./install-button.js"></script> -->
+    <script type="module" src="https://unpkg.com/esp-web-tools@9/dist/web/install-button.js?module"></script>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Argos Firmware Installer</h1>
+      <p>References</p>
+      <ul>
+        <li><a href="https://espressif.github.io/esptool-js/">esptool-js</a></li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=xjTACT1qO_8">YouTube: flash esp32 from web browser</a>
+        </li>
+        <li>
+          <a href="https://github.com/witnessmenow/ESP-Web-Tools-Tutorial">ESP-Web-Tools-Tutorial</a>
+        </li>
+      </ul>
+      <p class="button-row" align="center">
+        <esp-web-install-button manifest="./manifest.json"></esp-web-install-button>
+      </p>
+
+      <div class="footer">
+        Installer powered by <a href="https://esphome.github.io/esp-web-tools/">ESP Web Tools</a>.
+      </div>
+    </div>
+  </body>
+</html>
