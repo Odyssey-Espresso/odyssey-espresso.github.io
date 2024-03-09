@@ -14,6 +14,7 @@
       <h1>Directions</h1>
       <ol>
         <li>build firmware with platform io</li>
+        <li>start pio terminal</li>
         <li>
           <a href="https://community.platformio.org/t/export-of-binary-firmware-files-for-esp32-download-tool/9253">
             run `pio run -v -t upload`
@@ -23,8 +24,14 @@
         <li>
           <a href="https://www.rapidtables.com/convert/number/hex-to-decimal.html">convert hex to decimal</a>
         </li>
+        <li>
+          0x1000 = 4096 .pio/build/featheresp32/bootloader.bin<br />
+          0x8000 = 32768 .pio/build/featheresp32/partitions.bin<br />
+          0xe000 = 57344 .platformio/packages/framework-arduinoespressif32/tools/partitions/boot_app0.bin<br />
+          0x10000 = 65536 .pio/build/featheresp32/firmware.bin<br />
+        </li>
         <li>update manifest.json</li>
-        <li>update firmware bin files</li>
+        <li>update firmware bin files. usuallly only firmware.bin will be different</li>
       </ol>
       <h1>References</h1>
       <ul>
